@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20mm"
+   height="20mm"
+   viewBox="0 0 340.00001 340.00001"
+   version="1.2"
+   id="svg15"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   inkscape:export-filename="/media/joshua/Data/Daten/Develop/Projekte/walking-robot/logo/logo.png"
+   inkscape:export-xdpi="700"
+   inkscape:export-ydpi="700"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:document-units="mm"
+     units="mm"
+     scale-x="17"
+     inkscape:zoom="5.358298"
+     inkscape:cx="24.168122"
+     inkscape:cy="68.305272"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="surface3395" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="SilkS"
+     style="display:inline">
+    <g
+       id="surface3395"
+       transform="translate(-9.9999995,-30)">
+      <path
+         style="fill:#171919;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 20,180 v 80 h 320 v -80 l -80,80 -80,-80 -80,80 z m 0,0"
+         id="path2" />
+      <path
+         style="fill:none;stroke:#171919;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         d="m 20,180 v 80 h 320 v -80 l -80,80 -80,-80 -80,80 -80,-80"
+         id="path4" />
+      <path
+         style="fill:#171919;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 20,260 80,80 h 160 l 80,-80 z m 0,0"
+         id="path6" />
+      <path
+         style="fill:none;stroke:#171919;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         d="m 20,260 80,80 h 160 l 80,-80"
+         id="path8" />
+      <path
+         style="fill:#171919;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 100,180 80,-80 80,80 V 60 H 100 Z m 0,0"
+         id="path10" />
+      <path
+         style="fill:none;stroke:#171919;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         d="m 100,180 80,-80 80,80 V 60 H 100 v 120"
+         id="path12" />
+    </g>
+  </g>
+</svg>
