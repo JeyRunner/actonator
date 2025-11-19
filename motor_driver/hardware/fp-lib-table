@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ina)(type KiCad)(uri ${KIPRJMOD}/libs/ul_INA180A2IDBVR/)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/libs/logo.pretty)(options "")(descr ""))
+)

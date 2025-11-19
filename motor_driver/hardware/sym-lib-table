@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "motorDriver_power_stage-rescue")(type "Legacy")(uri "${KIPRJMOD}/motorDriver_power_stage-rescue.lib")(options "")(descr ""))
+  (lib (name "motorDriver")(type "Legacy")(uri "${KIPRJMOD}/libs/motorDriver.lib")(options "")(descr ""))
+  (lib (name "ina")(type "Legacy")(uri "${KIPRJMOD}/libs/ul_INA180A2IDBVR/INA180A2IDBVR.lib")(options "")(descr ""))
+  (lib (name "motorDriver-rescue")(type "KiCad")(uri "${KIPRJMOD}/motorDriver-rescue.kicad_sym")(options "")(descr ""))
+)

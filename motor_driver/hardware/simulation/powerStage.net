@@ -1,0 +1,28 @@
+* Z:\media\joshua\Data\Daten\Develop\Projekte\walking-robot\motorDriver\hardware\simulation\powerStage.asc
+V§PWM pwm_out 0 PULSE(0 3.3V 5us 10ns 10ns 1us 20us)
+VCC N005 0 9V
+M§low_MOS out low_gate 0 0 irfz44n
+R_Motor N007 out 1
+R§low_R_gate_in low_gate N004 22
+XU1 N001 N006 N002 out N008 N001 pwm_out 0 N004 LM5106_TRANS
+R2 0 N008 1k
+M§high_MOS N001 high_gate out out IRFP250N
+R§high_R_gate_in high_gate N002 1
+C_boot out N006 0.1µF
+D1 N001 N006 UF4007
+VCC1 0 0 0V
+D2 low_gate N004 UF4007
+D3 high_gate N003 UF4007
+R1 N001 N005 800m
+D4 NC_01 NC_02 1N4148
+M1 NC_03 NC_04 NC_05 NC_06 NMOS
+R§high_R_gate_d N003 N002 1
+.model D D
+.lib C:\users\joshua\Meine Dokumente\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\joshua\Meine Dokumente\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 27.5us 24.5us 0.15ns
+.lib Z:\media\joshua\Data\Daten\Develop\Projekte\walking-robot\motorDriver\hardware\simulation\lib\LM5106_TRANS.LIB
+.backanno
+.end
