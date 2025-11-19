@@ -1,0 +1,7 @@
+#pragma once
+
+enum class SYSTEM_CONTROL_STATE {
+    DO_NOTHING,
+    INIT_MOTOR_SEQUENCE,
+    PD_CONTROLLER,
+};

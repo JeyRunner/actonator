@@ -1,0 +1,53 @@
+# cross compile for raspberry
+SET(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR ARM)
+
+
+# find compiler
+#[[
+set(COMPILER_DIR /usr/bin)
+set(TOOLCHAIN_PREFIX arm-linux-gnueabihf)
+execute_process(
+        COMMAND which ${TOOLCHAIN_PREFIX}-gcc
+        OUTPUT_VARIABLE BINUTILS_PATH
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+message(STATUS "will use compiler prefix: ${BINUTILS_PATH}")
+]]
+
+#If you have installed cross compiler to somewhere else, please specify that path.
+SET(TOOLS_DIR $ENV{HOME}/toolchains/ros-pi/tools/arm-bcm2708)
+SET(COMPILER_ROOT ${TOOLS_DIR}/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/)
+#set(CMAKE_SYSROOT ${ARM_TOOLCHAIN_DIR}/../arm-linux-gnueabi)
+
+#SET(CMAKE_C_COMPILER ${TOOLCHAIN_PREFIX}-gcc)
+#SET(CMAKE_CXX_COMPILER ${COMPILER_DIR}/${TOOLCHAIN_PREFIX}-g++)
+SET(CMAKE_C_COMPILER ${COMPILER_ROOT}arm-linux-gnueabihf-gcc)
+SET(CMAKE_CXX_COMPILER ${COMPILER_ROOT}arm-linux-gnueabihf-g++)
+
+SET(CMAKE_FIND_ROOT_PATH ${TOOLS_DIR}/arm-linux-gnueabihf)
+
+SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+
+
+# Below call is necessary to avoid non-RT problem.
+SET(CMAKE_LIBRARY_ARCHITECTURE arm-linux-gnueabihf)
+
+SET(RASPBERRY_ROOT_PATH $ENV{HOME}/toolchains/ros-pi/sysroot)
+set(CMAKE_SYSROOT ${RASPBERRY_ROOT_PATH})
+SET(CMAKE_FIND_ROOT_PATH ${COMPILER_ROOT})#${RASPBERRY_ROOT_PATH})
+
+
+
+#This set of variables controls whether the CMAKE_FIND_ROOT_PATH and CMAKE_SYSROOT are used for find_xxx() operations.
+#SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM BOTH)
+#SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+#SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+#SET(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+
+#SET(CMAKE_PREFIX_PATH ${RASPBERRY_ROOT_PATH}/usr)
+
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} --sysroot=${RASPBERRY_ROOT_PATH}" CACHE INTERNAL "" FORCE)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --sysroot=${RASPBERRY_ROOT_PATH}" CACHE INTERNAL "" FORCE)
+SET(CMAKE_C_LINK_FLAGS "${CMAKE_C_LINK_FLAGS} --sysroot=${RASPBERRY_ROOT_PATH}" CACHE INTERNAL "" FORCE)
+SET(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} --sysroot=${RASPBERRY_ROOT_PATH}" CACHE INTERNAL "" FORCE)

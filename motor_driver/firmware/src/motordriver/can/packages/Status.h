@@ -1,0 +1,8 @@
+#pragma once
+
+enum class ENCODER_STATUS {
+    OK_MAGNET_DETECTED,
+    MAGNET_TOO_STRONG,
+    MAGNET_TOO_WEAK,
+    UNKNOWN,
+};

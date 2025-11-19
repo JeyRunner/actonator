@@ -1,0 +1,6 @@
+.idea
+cmake-build-debug
+dependencies/etl
+dependencies/avr_stl
+
+bin
