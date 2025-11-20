@@ -1,4 +1,6 @@
 ## Robot Actuator
+[move.webp](img/video/move.webp)
+
 3D printable robot actuator with belt-driven gearbox and custom FOC driver board for the used BLDC motor.
 
 ### Features
@@ -32,4 +34,9 @@ In `hardware/output` are all generated files for all versions.
 ![](motor_driver/hardware/output/v0.0.1/motorDriver_front.png)
 ![](motor_driver/hardware/output/v0.0.1/schematic.svg)
 
-For full schematic, see [hardware/motorDriver/Doutput/v0.0.1/schematic.pdf](motor_driver/hardware/output/v0.0.1/schematic.pdf).
+For full schematic, see [hardware/motorDriver/output/v0.0.1/schematic.pdf](motor_driver/hardware/output/v0.0.1/schematic.pdf).
+
+
+### Usage
+First look at [README.md](motor_driver/can_client_lib/README.md) to compile the communication lib and host control application.
+Then compile and flash the microcontroller firmware, see [README.md](motor_driver/firmware/README.md).
