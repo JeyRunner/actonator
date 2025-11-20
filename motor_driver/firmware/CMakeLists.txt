@@ -89,8 +89,8 @@ stm32_generate_binary_file(${PROJECT_NAME})
 
 # https://trass3r.github.io/coding/2019/05/28/embedded-cmake.html
 # https://mcuoneclipse.com/2023/12/03/building-with-cmake-presets/
-add_custom_command(
-  OUTPUT size.txt
-  TARGET ${target} 
-  POST_BUILD COMMAND ${CMAKE_SIZE_UTIL} -A "$<TARGET_FILE:${target}>"
-)
+#add_custom_command(
+#  OUTPUT size.txt
+#  TARGET ${target}
+#  POST_BUILD COMMAND ${CMAKE_SIZE_UTIL} -A "$<TARGET_FILE:${target}>"
+#)

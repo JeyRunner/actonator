@@ -10,7 +10,7 @@ using namespace std;
 class CmdArgs
 {
   public:
-    string canInterface = "vcan0";
+    string canInterface = "can0";
     unsigned int clientId = 1;
     bool runMotorInitSequence = false;
     bool forceMotorEnable = false;

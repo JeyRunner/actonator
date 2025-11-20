@@ -8,7 +8,7 @@ using namespace lyra;
 
 
 // args
-string args_canInterface = "vcan0";
+string args_canInterface = "can0";
 unsigned int args_clientId;
 optional<float> args_gainP = nullopt;
 optional<float> args_gainD = nullopt;
