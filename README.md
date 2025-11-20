@@ -4,19 +4,20 @@
 3D printable robot actuator with belt-driven gearbox and custom FOC driver board for the used BLDC motor.
 
 ### Features
-- 12 bit encoder
-- Driver Board
+
+- Driver board
   - Input: 10 - 24V
-  - Output:
-      - Can drive two BLDC motors, each output up to 10A
-  - Communication
-      - CAN Bus
-      - Encoders connected via two I2C connections
-          - Alternatively via two SPI inputs
+  - Output: Can drive up to two BLDC motors, each output up to 10A
+  - CAN Bus Communication
+  - Encoders connected via two I2C connections
+      - Alternatively via two SPI inputs
+    - 12 bit encoders
 - Gearbox
   - Fully 3d printable
   - 2 stage timing belt based reduction
   - Simple screw-based belt tensioning mechanism
+  - ~1:20 reduction
+  - Easily back drivable
 
 ### Project Structure
 - `motor_driver/firmware`: C++ firmware code for the stm32 microcontroller
@@ -26,7 +27,7 @@
 - `motor_driver/hardware/output`: Schematics, board layout and manufacturing files.
 - `gearbox`: 3D printing stl files for the gearbox.
 
-### Hardware
+### Driver Board Electronics
 This board is a dual channel brushless motor driver.
 The design of the board can be found in the `hardware` subfolder.
 In `hardware/output` are all generated files for all versions.
@@ -37,6 +38,10 @@ In `hardware/output` are all generated files for all versions.
 For full schematic, see [hardware/motorDriver/output/v0.0.1/schematic.pdf](motor_driver/hardware/output/v0.0.1/schematic.pdf).
 
 
+### Gearbox
+![cad_view.png](gearbox/cad_view_1.png)
+![cad_view.png](gearbox/cad_view_2.png)
+
 ### Usage
-First look at [README.md](motor_driver/can_client_lib/README.md) to compile the communication lib and host control application.
-Then compile and flash the microcontroller firmware, see [README.md](motor_driver/firmware/README.md).
+First look at [motor_driver/can_client_lib/README.md](motor_driver/can_client_lib/README.md) to compile the communication lib and host control application.
+Then compile and flash the microcontroller firmware, see [motor_driver/firmware/README.md](motor_driver/firmware/README.md).
