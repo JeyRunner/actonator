@@ -2,6 +2,7 @@
 ![move.webp](img/video/move.webp)
 
 3D printable robot actuator with belt-driven gearbox and custom FOC driver board for the used BLDC motor.
+It uses the [CAN SOT Protocol](https://github.com/JeyRunner/can-sot-protocol) for the communication, which allows to not only send commands and receive state changes but also to set configuration parameters dynamically during runtime.
 
 ### Features
 
