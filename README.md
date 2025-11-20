@@ -1,5 +1,5 @@
-## Robot Actuator
-[move.webp](img/video/move.webp)
+## Actonator - 3D Printable Robot Actuator
+![move.webp](img/video/move.webp)
 
 3D printable robot actuator with belt-driven gearbox and custom FOC driver board for the used BLDC motor.
 
